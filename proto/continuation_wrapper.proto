@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package com.google.protos.youtube.api.innertube;
+
+import "browse_continuation.proto";
+
+message ContinuationWrapper {
+   // internal id for browse continuation wrapper
+   BrowseContinuationWrapper browse_continuation = 80226972;
+}

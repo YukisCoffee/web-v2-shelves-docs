@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package com.google.protos.youtube.api.innertube;
+
+/* Used as the outermost wrapper of a browse continuation,
+   provides certain client-specific information. */
+message BrowseContinuationWrapper {
+   string browse_id = 2;
+
+   /* An embedded message (encoded in base64) that includes specific information
+      for the particular browse page. This stores a ContinuationTypeWrapper. */
+   string encoded_action = 3;
+
+   string target_id = 35;
+}
+
+/* Stores the actual specific information about a browse continuation. */
+message BrowseContinuation {
+   int64 timestamp = 3;
+
+   BrowseContinuationContextWrapper context = 11;
+   BrowseContinuationAction action = 12;
+
+   optional BrowseContinuationReloadAction reload_action = 325832737;
+   optional BrowseContinuationAppendAction append_action = 318126543;
+}
+
+/* Wraps the context information of a browse continuation wrapper. */
+message BrowseContinuationContextWrapper {
+   BrowseContinuationContext content = 1;
+}
+
+/* Stores context information about a browse continuation, such as the
+   snapshot and requested client configuration.
+   
+   This is possibly only applicable to the homepage API.*/
+message BrowseContinuationContext {
+   string snapshot_type = 1;
+   string internal_id = 2;
+   bytes context = 3;
+}
+
+/* Stores information about the continuation action, such as
+   its type and timing info. */
+message BrowseContinuationAction {
+   int32 idk = 1; // possibly bool
+   string type = 2;
+   BrowseContinuationActionTiming timing = 3;
+   BrowseContinuationActionTiming timing_alt = 4;
+}
+
+/* Stores information about the action timing. */
+message BrowseContinuationActionTiming {
+   int64 timestamp = 1;
+   fixed64 a = 2;
+   fixed64 b = 3;
+}
+
+/* undocumented */
+message BrowseContinuationReloadAction {
+   int32 a = 1;
+}
+
+/* undocumented */
+message BrowseContinuationAppendAction {
+   int32 a = 1;
+}

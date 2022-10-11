@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package com.google.protos.youtube.api.innertube;
+
+message ContinuationTypeWrapper {
+   optional string append_continuation = 15;
+   optional string reload_continuation = 72;
+}
