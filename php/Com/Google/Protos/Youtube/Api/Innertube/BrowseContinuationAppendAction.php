@@ -16,9 +16,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class BrowseContinuationAppendAction extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>int32 a = 1;</code>
+     * Generated from protobuf field <code>optional int32 a = 1;</code>
      */
-    protected $a = 0;
+    protected $a = null;
 
     /**
      * Constructor.
@@ -35,16 +35,26 @@ class BrowseContinuationAppendAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int32 a = 1;</code>
+     * Generated from protobuf field <code>optional int32 a = 1;</code>
      * @return int
      */
     public function getA()
     {
-        return $this->a;
+        return isset($this->a) ? $this->a : 0;
+    }
+
+    public function hasA()
+    {
+        return isset($this->a);
+    }
+
+    public function clearA()
+    {
+        unset($this->a);
     }
 
     /**
-     * Generated from protobuf field <code>int32 a = 1;</code>
+     * Generated from protobuf field <code>optional int32 a = 1;</code>
      * @param int $var
      * @return $this
      */

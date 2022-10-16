@@ -28,9 +28,9 @@ class BrowseContinuationWrapper extends \Google\Protobuf\Internal\Message
      */
     protected $encoded_action = '';
     /**
-     * Generated from protobuf field <code>string target_id = 35;</code>
+     * Generated from protobuf field <code>optional string target_id = 35;</code>
      */
-    protected $target_id = '';
+    protected $target_id = null;
 
     /**
      * Constructor.
@@ -101,16 +101,26 @@ class BrowseContinuationWrapper extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string target_id = 35;</code>
+     * Generated from protobuf field <code>optional string target_id = 35;</code>
      * @return string
      */
     public function getTargetId()
     {
-        return $this->target_id;
+        return isset($this->target_id) ? $this->target_id : '';
+    }
+
+    public function hasTargetId()
+    {
+        return isset($this->target_id);
+    }
+
+    public function clearTargetId()
+    {
+        unset($this->target_id);
     }
 
     /**
-     * Generated from protobuf field <code>string target_id = 35;</code>
+     * Generated from protobuf field <code>optional string target_id = 35;</code>
      * @param string $var
      * @return $this
      */

@@ -6,5 +6,5 @@ import "browse_continuation.proto";
 
 message ContinuationWrapper {
    // internal id for browse continuation wrapper
-   BrowseContinuationWrapper browse_continuation = 80226972;
+   optional BrowseContinuationWrapper browse_continuation = 80226972;
 }

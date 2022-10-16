@@ -31,7 +31,7 @@ class BrowseContinuationAction extends \Google\Protobuf\Internal\Message
      */
     protected $timing = null;
     /**
-     * Generated from protobuf field <code>.com.google.protos.youtube.api.innertube.BrowseContinuationActionTiming timing_alt = 4;</code>
+     * Generated from protobuf field <code>optional .com.google.protos.youtube.api.innertube.BrowseContinuationActionTiming timing_alt = 4;</code>
      */
     protected $timing_alt = null;
 
@@ -134,7 +134,7 @@ class BrowseContinuationAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.com.google.protos.youtube.api.innertube.BrowseContinuationActionTiming timing_alt = 4;</code>
+     * Generated from protobuf field <code>optional .com.google.protos.youtube.api.innertube.BrowseContinuationActionTiming timing_alt = 4;</code>
      * @return \Com\Google\Protos\Youtube\Api\Innertube\BrowseContinuationActionTiming|null
      */
     public function getTimingAlt()
@@ -153,7 +153,7 @@ class BrowseContinuationAction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.com.google.protos.youtube.api.innertube.BrowseContinuationActionTiming timing_alt = 4;</code>
+     * Generated from protobuf field <code>optional .com.google.protos.youtube.api.innertube.BrowseContinuationActionTiming timing_alt = 4;</code>
      * @param \Com\Google\Protos\Youtube\Api\Innertube\BrowseContinuationActionTiming $var
      * @return $this
      */

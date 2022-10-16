@@ -20,13 +20,13 @@ class BrowseContinuationActionTiming extends \Google\Protobuf\Internal\Message
      */
     protected $timestamp = 0;
     /**
-     * Generated from protobuf field <code>fixed64 a = 2;</code>
+     * Generated from protobuf field <code>optional fixed64 a = 2;</code>
      */
-    protected $a = 0;
+    protected $a = null;
     /**
-     * Generated from protobuf field <code>fixed64 b = 3;</code>
+     * Generated from protobuf field <code>optional fixed64 b = 3;</code>
      */
-    protected $b = 0;
+    protected $b = null;
 
     /**
      * Constructor.
@@ -67,16 +67,26 @@ class BrowseContinuationActionTiming extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>fixed64 a = 2;</code>
+     * Generated from protobuf field <code>optional fixed64 a = 2;</code>
      * @return int|string
      */
     public function getA()
     {
-        return $this->a;
+        return isset($this->a) ? $this->a : 0;
+    }
+
+    public function hasA()
+    {
+        return isset($this->a);
+    }
+
+    public function clearA()
+    {
+        unset($this->a);
     }
 
     /**
-     * Generated from protobuf field <code>fixed64 a = 2;</code>
+     * Generated from protobuf field <code>optional fixed64 a = 2;</code>
      * @param int|string $var
      * @return $this
      */
@@ -89,16 +99,26 @@ class BrowseContinuationActionTiming extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>fixed64 b = 3;</code>
+     * Generated from protobuf field <code>optional fixed64 b = 3;</code>
      * @return int|string
      */
     public function getB()
     {
-        return $this->b;
+        return isset($this->b) ? $this->b : 0;
+    }
+
+    public function hasB()
+    {
+        return isset($this->b);
+    }
+
+    public function clearB()
+    {
+        unset($this->b);
     }
 
     /**
-     * Generated from protobuf field <code>fixed64 b = 3;</code>
+     * Generated from protobuf field <code>optional fixed64 b = 3;</code>
      * @param int|string $var
      * @return $this
      */

@@ -11,7 +11,7 @@ message BrowseContinuationWrapper {
       for the particular browse page. This stores a ContinuationTypeWrapper. */
    string encoded_action = 3;
 
-   string target_id = 35;
+   optional string target_id = 35;
 }
 
 /* Stores the actual specific information about a browse continuation. */
@@ -46,22 +46,22 @@ message BrowseContinuationAction {
    int32 idk = 1; // possibly bool
    string type = 2;
    BrowseContinuationActionTiming timing = 3;
-   BrowseContinuationActionTiming timing_alt = 4;
+   optional BrowseContinuationActionTiming timing_alt = 4;
 }
 
 /* Stores information about the action timing. */
 message BrowseContinuationActionTiming {
    int64 timestamp = 1;
-   fixed64 a = 2;
-   fixed64 b = 3;
+   optional fixed64 a = 2;
+   optional fixed64 b = 3;
 }
 
 /* undocumented */
 message BrowseContinuationReloadAction {
-   int32 a = 1;
+   optional int32 a = 1;
 }
 
 /* undocumented */
 message BrowseContinuationAppendAction {
-   int32 a = 1;
+   optional int32 a = 1;
 }

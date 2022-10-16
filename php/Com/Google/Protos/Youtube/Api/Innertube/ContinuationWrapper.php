@@ -16,7 +16,7 @@ class ContinuationWrapper extends \Google\Protobuf\Internal\Message
     /**
      * internal id for browse continuation wrapper
      *
-     * Generated from protobuf field <code>.com.google.protos.youtube.api.innertube.BrowseContinuationWrapper browse_continuation = 80226972;</code>
+     * Generated from protobuf field <code>optional .com.google.protos.youtube.api.innertube.BrowseContinuationWrapper browse_continuation = 80226972;</code>
      */
     protected $browse_continuation = null;
 
@@ -38,7 +38,7 @@ class ContinuationWrapper extends \Google\Protobuf\Internal\Message
     /**
      * internal id for browse continuation wrapper
      *
-     * Generated from protobuf field <code>.com.google.protos.youtube.api.innertube.BrowseContinuationWrapper browse_continuation = 80226972;</code>
+     * Generated from protobuf field <code>optional .com.google.protos.youtube.api.innertube.BrowseContinuationWrapper browse_continuation = 80226972;</code>
      * @return \Com\Google\Protos\Youtube\Api\Innertube\BrowseContinuationWrapper|null
      */
     public function getBrowseContinuation()
@@ -59,7 +59,7 @@ class ContinuationWrapper extends \Google\Protobuf\Internal\Message
     /**
      * internal id for browse continuation wrapper
      *
-     * Generated from protobuf field <code>.com.google.protos.youtube.api.innertube.BrowseContinuationWrapper browse_continuation = 80226972;</code>
+     * Generated from protobuf field <code>optional .com.google.protos.youtube.api.innertube.BrowseContinuationWrapper browse_continuation = 80226972;</code>
      * @param \Com\Google\Protos\Youtube\Api\Innertube\BrowseContinuationWrapper $var
      * @return $this
      */
